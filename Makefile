@@ -3,4 +3,3 @@ start:
 
 lint:
 	yarn lint
-

@@ -9,5 +9,6 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
+  // eslint-disable-next-line
   render: h => h(App),
 }).$mount('#app');

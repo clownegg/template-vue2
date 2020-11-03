@@ -1,4 +1,5 @@
-import Vue, { VNode } from 'vue';
+// eslint-disable-next-line
+import Vineue, { VNode } from 'vue';
 
 declare global {
   namespace JSX {

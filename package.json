@@ -6,7 +6,7 @@
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint -f compact"
   },
   "dependencies": {
     "@vue/composition-api": "^1.0.0-beta.19",

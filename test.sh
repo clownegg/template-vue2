@@ -1,10 +1,10 @@
 #!/bin/sh
 
-FILES=$(git diff --cached --name-only --diff-filter=ACMR "*.ts" | sed 's| |\\ |g')
-echo $FILES
-
-echo "$FILES" | xargs yarn lint
-
-echo "test$FILES"
-
-exit 0
+result=$(yarn eslint --ext .ts src | grep -e "warning" -e "error")
+if ["$result" = ""]; then
+  echo "COMMIT 成功"
+  exit 0
+else
+  echo "COMMIT 失敗: ESLintによるエラーが発生しています"
+  exit 1
+fi
